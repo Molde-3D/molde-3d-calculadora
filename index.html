@@ -37,6 +37,8 @@
     .info:hover .tooltip,.info:focus .tooltip { visibility:visible; opacity:1; transform:translateX(-50%) translateY(0); }
     .input-wrap { position:relative; }
     input,select { width:100%; min-height:46px; padding:11px 42px 11px 13px; border:1px solid #cbd9dd; border-radius:10px; background:#fff; color:var(--ink); font:inherit; outline:none; transition:border-color .15s,box-shadow .15s; }
+    input[type="number"] { appearance:textfield; -moz-appearance:textfield; }
+    input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button { appearance:none; margin:0; }
     select { padding-right:13px; cursor:pointer; }
     input:focus,select:focus { border-color:var(--cyan); box-shadow:0 0 0 4px rgba(32,196,215,.14); }
     .suffix { position:absolute; right:13px; top:50%; transform:translateY(-50%); color:var(--muted); font-size:.84rem; pointer-events:none; }
